@@ -1,0 +1,73 @@
+-- DROP SCHEMA "Demo0704";
+
+CREATE SCHEMA "Demo0704" AUTHORIZATION user10;
+-- "Demo0704"."role" определение
+
+-- Drop table
+
+-- DROP TABLE "role";
+
+CREATE TABLE "role" ( id serial4 NOT NULL, "name" varchar NOT NULL, CONSTRAINT role_pk PRIMARY KEY (id));
+
+
+-- "Demo0704".maker определение
+
+-- Drop table
+
+-- DROP TABLE maker;
+
+CREATE TABLE maker ( id serial4 NOT NULL, "name" varchar NOT NULL, CONSTRAINT maker_pk PRIMARY KEY (id));
+
+
+-- "Demo0704".pointisyee определение
+
+-- Drop table
+
+-- DROP TABLE pointisyee;
+
+CREATE TABLE pointisyee ( id serial4 NOT NULL, "name" varchar NOT NULL, CONSTRAINT pointisyee_pk PRIMARY KEY (id));
+
+
+-- "Demo0704".category определение
+
+-- Drop table
+
+-- DROP TABLE category;
+
+CREATE TABLE category ( id serial4 NOT NULL, "name" varchar NOT NULL, CONSTRAINT category_pk PRIMARY KEY (id));
+
+
+-- "Demo0704".izmerenie определение
+
+-- Drop table
+
+-- DROP TABLE izmerenie;
+
+CREATE TABLE izmerenie ( id serial4 NOT NULL, "name" varchar NOT NULL, CONSTRAINT izmerenie_pk PRIMARY KEY (id));
+
+
+-- "Demo0704".users определение
+
+-- Drop table
+
+-- DROP TABLE users;
+
+CREATE TABLE users ( id serial4 NOT NULL, firstname varchar NOT NULL, name_lastname varchar NOT NULL, login varchar NOT NULL, "password" varchar NOT NULL, id_role int4 NOT NULL, CONSTRAINT users_pk PRIMARY KEY (id), CONSTRAINT users_role_fk FOREIGN KEY (id_role) REFERENCES "role"(id));
+
+
+-- "Demo0704".product определение
+
+-- Drop table
+
+-- DROP TABLE product;
+
+CREATE TABLE product ( id serial4 NOT NULL, articul varchar NOT NULL, "name" varchar NOT NULL, id_izmerenie int4 NOT NULL, price numeric NOT NULL, max_discount float4 NOT NULL, id_maker int4 NOT NULL, id_pointisyee int4 NOT NULL, id_category int4 NOT NULL, discount_now float4 NOT NULL, in_sklad float4 NOT NULL, discription varchar NULL, picture varchar NULL, CONSTRAINT product_pk PRIMARY KEY (id), CONSTRAINT product_category_fk FOREIGN KEY (id_category) REFERENCES category(id), CONSTRAINT product_izmerenie_fk FOREIGN KEY (id_izmerenie) REFERENCES izmerenie(id), CONSTRAINT product_maker_fk FOREIGN KEY (id_maker) REFERENCES maker(id), CONSTRAINT product_pointisyee_fk FOREIGN KEY (id_pointisyee) REFERENCES pointisyee(id));
+
+
+-- "Demo0704".user_product определение
+
+-- Drop table
+
+-- DROP TABLE user_product;
+
+CREATE TABLE user_product ( id serial4 NOT NULL, id_user int4 NOT NULL, id_product int4 NOT NULL, CONSTRAINT user_product_pk PRIMARY KEY (id), CONSTRAINT user_product_product_fk FOREIGN KEY (id_product) REFERENCES product(id), CONSTRAINT user_product_users_fk FOREIGN KEY (id_user) REFERENCES users(id));

@@ -1,0 +1,95 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Demo0704.ProductWin"
+        Title="Список продуктов"
+        x:CompileBindings="False">
+  <Grid ColumnDefinitions="* * * *" Background="Gray" RowDefinitions="* * * *">
+
+    
+      <TextBox x:Name="SearchBox" Width="200" Background="White"
+               VerticalAlignment="Bottom" Grid.Column="1"
+               KeyUp="SearchBox_KeyUp" Watermark="Поиск"/>
+
+          <Button Grid.Column="2" HorizontalAlignment="Right"
+              VerticalAlignment="Bottom"
+              Content="Выйти" Background="DarkRed"/>
+
+      <StackPanel Grid.Column="3" Grid.Row="1" Spacing="15" Margin="5">
+          <StackPanel>
+          <TextBlock Text="Сортировка по цене"/>
+        <ComboBox x:Name="OrderPrice" Background="White" SelectionChanged="ComboBox_SelectionChanged">
+			<ComboBoxItem> По возрастанию </ComboBoxItem>
+			<ComboBoxItem> По убыванию </ComboBoxItem>
+        </ComboBox>
+      </StackPanel>
+
+      <StackPanel>
+        <TextBlock Text="Фильтрация по скидке" />
+        <ComboBox x:Name="OrderDiscount" Background="White"  SelectionChanged="OrderDiscount_SelectionChanged">
+			<ComboBoxItem> Все  диапазоны </ComboBoxItem>
+			<ComboBoxItem>  0-9,99% </ComboBoxItem>
+			<ComboBoxItem>  10-14,99% </ComboBoxItem>
+			<ComboBoxItem>  15% и более </ComboBoxItem>
+        </ComboBox>
+            </StackPanel>
+
+          <StackPanel>
+			  <Button Content="Добавить"
+                      Background="White"
+                      Click="Button_Click"/>
+          </StackPanel>
+
+          </StackPanel>
+	  <ListBox x:Name="ListProducts"
+               Grid.Row="1" Grid.RowSpan="2"
+               Grid.Column="1" Grid.ColumnSpan="2"
+               SelectionChanged="ListProducts_SelectionChanged"
+               >
+          <ListBox.ItemTemplate>
+			  <DataTemplate>
+				            <Border Background="{Binding Borderbruh}" BorderBrush="Black" BorderThickness="1">
+		  <Grid ColumnDefinitions="100 *" ShowGridLines="True">
+              
+			  <StackPanel  Margin="5">
+				  <Image Source="{Binding Image}" Width="90"/>
+              </StackPanel>
+
+                  <StackPanel Grid.Column="1" Margin="5">
+
+                      <StackPanel Orientation="Horizontal">
+                  <TextBlock Text="Название: "/>
+				  <TextBlock Text="{Binding Name}"/>
+              </StackPanel>
+
+                      <StackPanel Orientation="Horizontal">
+                  <TextBlock Text="Описание: "/>
+				  <TextBlock Text="{Binding Discription}"/>
+              </StackPanel>
+
+                      <StackPanel Orientation="Horizontal">
+                  <TextBlock Text="Производитель: "/>
+				  <TextBlock Text="{Binding IdMakerNavigation.Name}"/>
+              </StackPanel>
+
+                      <StackPanel Orientation="Horizontal">
+                  <TextBlock Text="Цена: "/>
+				  <TextBlock Text="{Binding Price}"/>
+                  <TextBlock Text=" Руб."/>
+              </StackPanel>
+
+                      <StackPanel Orientation="Horizontal">
+                  <TextBlock Text="Скидка: "/>
+				  <TextBlock Text="{Binding DiscountNow}"/>
+              </StackPanel>
+
+                      </StackPanel>
+          </Grid>
+              </Border>
+              </DataTemplate>
+          </ListBox.ItemTemplate>
+      </ListBox>
+  </Grid>
+</Window>

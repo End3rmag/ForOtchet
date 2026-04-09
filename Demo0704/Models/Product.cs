@@ -2,6 +2,7 @@
 using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 
 namespace Demo0704.Models;
@@ -10,6 +11,7 @@ public partial class Product
 {
     public int Id { get; set; }
 
+    
     public string Articul { get; set; } = null!;
 
     public string Name { get; set; } = null!;

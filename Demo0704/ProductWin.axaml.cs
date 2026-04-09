@@ -16,6 +16,11 @@ public partial class ProductWin : Window
     public ProductWin()
     {
         InitializeComponent();
+        _con = new DbUser10Context();
+
+        OrderDiscount.SelectedIndex = 0;
+        OrderPrice.SelectedIndex = 0;
+        GetProduct();
     }
 
     public ProductWin(User user)
@@ -103,15 +108,13 @@ public partial class ProductWin : Window
         Close();
     }
 
-    private void ListProducts_SelectionChanged(object? sender, SelectionChangedEventArgs e)
+    private async void ListProducts_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
         var con = new DbUser10Context();
-        var indexproduct = con.Products.Include(x => x.IdMakerNavigation);
+        var indexproduct = ListProducts.SelectedItem as Product;
 
-        if(indexproduct.Count() > 0)
-        {
-            new EditorWin(indexproduct.First()).Show();
-            Close();
-        }
+        AddWin add = new AddWin(indexproduct);
+        await add.ShowDialog(this);
+        GetProduct();
     }
 }

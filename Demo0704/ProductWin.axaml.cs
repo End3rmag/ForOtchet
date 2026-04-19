@@ -11,12 +11,12 @@ namespace Demo0704;
 
 public partial class ProductWin : Window
 {
-    private DbUser10Context _con;
+    private PostgresContext _con;
     private User _user;
     public ProductWin()
     {
         InitializeComponent();
-        _con = new DbUser10Context();
+        _con = new PostgresContext();
 
         OrderDiscount.SelectedIndex = 0;
         OrderPrice.SelectedIndex = 0;
@@ -26,7 +26,7 @@ public partial class ProductWin : Window
     public ProductWin(User user)
     {
         InitializeComponent();
-        _con = new DbUser10Context();
+        _con = new PostgresContext();
         DataContext = user;
         _user = user;
         OrderDiscount.SelectedIndex = 0;
@@ -36,16 +36,16 @@ public partial class ProductWin : Window
 
     public void GetProduct()
     {
-        var con = new DbUser10Context();
+        var con = new PostgresContext();
 
         var _products = con.Products.Include(x => x.IdMakerNavigation).ToList();
 
         //для поиска
-        if (SearchBox.Text != null)
+        if (!string.IsNullOrEmpty(SearchBox.Text))
         {
-            _products = _products.Where(x => (x.Name.ToLower().Contains(SearchBox.Text.ToLower())) ||
-            (x.Discription.ToLower().Contains(SearchBox.Text.ToLower())) ||
-            (x.IdMakerNavigation.Name.ToLower().Contains(SearchBox.Text.ToLower()))).ToList();
+            _products = _products.Where(x => (x.Name?.ToLower().Contains(SearchBox.Text.ToLower()) ?? false) ||
+            (x.Discription?.ToLower().Contains(SearchBox.Text.ToLower()) ?? false) ||
+            (x.IdMakerNavigation?.Name?.ToLower().Contains(SearchBox.Text.ToLower()) ?? false)).ToList();
         }
 
         //Сортировка по цене
@@ -104,17 +104,20 @@ public partial class ProductWin : Window
 
     private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        new AddWin().Show();
-        Close();
+        new AddWin().ShowDialog(this);
+        GetProduct();
     }
 
     private async void ListProducts_SelectionChanged(object? sender, SelectionChangedEventArgs e)
     {
-        var con = new DbUser10Context();
-        var indexproduct = ListProducts.SelectedItem as Product;
 
-        AddWin add = new AddWin(indexproduct);
-        await add.ShowDialog(this);
-        GetProduct();
+        if (ListProducts.SelectedItem is Product selectedProduct)
+        {
+            _con.Entry(selectedProduct).State = EntityState.Detached;
+            await new AddWin(selectedProduct).ShowDialog(this);
+            GetProduct();
+            ListProducts.SelectedItem = null;
+        }
+
     }
 }

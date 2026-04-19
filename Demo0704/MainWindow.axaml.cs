@@ -17,7 +17,7 @@ namespace Demo0704
         private async void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
 
-            var con = new DbUser10Context();
+            var con = new PostgresContext();
 
             var log = LoginBox.Text?.Trim();
             var pas = PasswordBox.Text?.Trim();

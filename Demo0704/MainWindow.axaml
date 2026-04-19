@@ -2,12 +2,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="410" d:DesignHeight="210" MaxHeight="210" MaxWidth="410"
+        WindowStartupLocation="CenterScreen"
         x:Class="Demo0704.MainWindow"
-        Title="Demo0704">
-    <Grid RowDefinitions="* * *" ShowGridLines="True">
+        Title="Авторизация">
+    <Border Width="400" Height="200" BorderBrush="Black" BorderThickness="1"> 
+    <Grid RowDefinitions="* * *" >
 		<TextBox x:Name="LoginBox" Watermark="Введите логин" VerticalContentAlignment="Center"/>
 		<TextBox x:Name="PasswordBox" Grid.Row="1" Watermark="Введите пароль" VerticalContentAlignment="Center"/>
-		<Button Grid.Row="2" Content="Авторизоваться" FontSize="30" Click="Button_Click"/>
+		<Button Grid.Row="2" Content="Авторизоваться" FontSize="30" Click="Button_Click" HorizontalAlignment="Center"/>
     </Grid>
+        </Border>
 </Window>

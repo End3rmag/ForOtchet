@@ -2,7 +2,6 @@
 using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.IO;
 
 namespace Demo0704.Models;
@@ -11,7 +10,6 @@ public partial class Product
 {
     public int Id { get; set; }
 
-    
     public string Articul { get; set; } = null!;
 
     public string Name { get; set; } = null!;
@@ -24,7 +22,7 @@ public partial class Product
 
     public int IdMaker { get; set; }
 
-    public int IdPointisyee { get; set; }
+    public int IdPostavshik { get; set; }
 
     public int IdCategory { get; set; }
 
@@ -42,12 +40,11 @@ public partial class Product
 
     public virtual Maker IdMakerNavigation { get; set; } = null!;
 
-    public virtual Pointisyee IdPointisyeeNavigation { get; set; } = null!;
+    public virtual Postavshik IdPostavshikNavigation { get; set; } = null!;
 
     public virtual ICollection<UserProduct> UserProducts { get; set; } = new List<UserProduct>();
 
 
-    //для смены 
     public Brush Borderbruh
     {
         get
@@ -55,7 +52,7 @@ public partial class Product
             if (DiscountNow >= 15)
             {
                 return new SolidColorBrush(Color.Parse("#7fff00"));
-                
+
             }
             return null;
         }
@@ -64,10 +61,10 @@ public partial class Product
     private Bitmap Image
     {
         get
-        {
+        {   
             if (Picture != null && Picture != "")
             {
-                Bitmap bitmap = new Bitmap(Path.Combine(Directory.GetCurrentDirectory().Replace("\\bin\\Debug\\net9.0", ""), Picture));
+                Bitmap bitmap = new Bitmap(Path.Combine(Directory.GetCurrentDirectory().Replace("\\bin\\Debug\\net9.0", ""), Picture)   );
                 return bitmap;
             }
             else
@@ -78,4 +75,7 @@ public partial class Product
 
         }
     }
+
 }
+
+ 

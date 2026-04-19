@@ -1,46 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\class_student\\source\\repos\\Demo0704\\",
+  "WorkspaceRootPath": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\addwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\addwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\addwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\addwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\addwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\productwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\productwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\addwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\addwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\editorwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\editorwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\models\\postavshik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\models\\postavshik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\productwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\models\\izmerenie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\models\\izmerenie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\productwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\productwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\productwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\productwin.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\class_student\\source\\repos\\demo0704\\demo0704\\editorwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\editorwin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\picture\\\u0430112\u04424.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\picture\\\u0430112\u04424.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\context\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\context\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\models\\maker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\models\\maker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|c:\\users\\kabanidze\\source\\repos\\forotchet\\demo0704\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2778A37-8C39-466D-BF9A-A97C61065788}|Demo0704\\Demo0704.csproj|solutionrelative:demo0704\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,8 +70,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{73068c07-fba1-453f-99ae-6edf972119b2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -59,126 +83,185 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "App.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\App.axaml.cs",
-              "RelativeDocumentMoniker": "Demo0704\\App.axaml.cs",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\App.axaml.cs",
-              "RelativeToolTip": "Demo0704\\App.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Title": "Postavshik.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Postavshik.cs",
+              "RelativeDocumentMoniker": "Demo0704\\Models\\Postavshik.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Postavshik.cs",
+              "RelativeToolTip": "Demo0704\\Models\\Postavshik.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T06:42:18.283Z",
+              "WhenOpened": "2026-04-09T14:46:38.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Izmerenie.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Izmerenie.cs",
+              "RelativeDocumentMoniker": "Demo0704\\Models\\Izmerenie.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Izmerenie.cs",
+              "RelativeToolTip": "Demo0704\\Models\\Izmerenie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T14:46:37.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Demo0704\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Category.cs",
+              "RelativeToolTip": "Demo0704\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T14:46:35.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AddWin.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\AddWin.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\AddWin.axaml.cs",
               "RelativeDocumentMoniker": "Demo0704\\AddWin.axaml.cs",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\AddWin.axaml.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\AddWin.axaml.cs",
               "RelativeToolTip": "Demo0704\\AddWin.axaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAYwMcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T08:50:04.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AddWin.axaml",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\AddWin.axaml",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\AddWin.axaml",
               "RelativeDocumentMoniker": "Demo0704\\AddWin.axaml",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\AddWin.axaml*",
-              "RelativeToolTip": "Demo0704\\AddWin.axaml*",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\AddWin.axaml",
+              "RelativeToolTip": "Demo0704\\AddWin.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-07T08:50:04.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EditorWin.axaml",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\EditorWin.axaml",
-              "RelativeDocumentMoniker": "Demo0704\\EditorWin.axaml",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\EditorWin.axaml",
-              "RelativeToolTip": "Demo0704\\EditorWin.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-07T08:49:48.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditorWin.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\EditorWin.axaml.cs",
-              "RelativeDocumentMoniker": "Demo0704\\EditorWin.axaml.cs",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\EditorWin.axaml.cs",
-              "RelativeToolTip": "Demo0704\\EditorWin.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T08:49:48.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\Models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Demo0704\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Product.cs",
               "RelativeToolTip": "Demo0704\\Models\\Product.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wCgAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAA7wDUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T07:34:58.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProductWin.axaml",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\ProductWin.axaml",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\ProductWin.axaml",
               "RelativeDocumentMoniker": "Demo0704\\ProductWin.axaml",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\ProductWin.axaml",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\ProductWin.axaml",
               "RelativeToolTip": "Demo0704\\ProductWin.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-07T07:27:18.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T07:27:18.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Demo0704\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\MainWindow.axaml",
+              "RelativeToolTip": "Demo0704\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-07T06:33:22.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Demo0704\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Demo0704\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T06:33:18.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProductWin.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\ProductWin.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\ProductWin.axaml.cs",
               "RelativeDocumentMoniker": "Demo0704\\ProductWin.axaml.cs",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\ProductWin.axaml.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\ProductWin.axaml.cs",
               "RelativeToolTip": "Demo0704\\ProductWin.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAhwC0AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T07:27:18.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "Demo0704\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\MainWindow.axaml",
-              "RelativeToolTip": "Demo0704\\MainWindow.axaml",
+              "DocumentIndex": 9,
+              "Title": "\u0410112\u04224.jpg",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Picture\\\u0410112\u04224.jpg",
+              "RelativeDocumentMoniker": "Demo0704\\Picture\\\u0410112\u04224.jpg",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Picture\\\u0410112\u04224.jpg",
+              "RelativeToolTip": "Demo0704\\Picture\\\u0410112\u04224.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-04-15T20:55:45.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PostgresContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Context\\PostgresContext.cs",
+              "RelativeDocumentMoniker": "Demo0704\\Context\\PostgresContext.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Context\\PostgresContext.cs",
+              "RelativeToolTip": "Demo0704\\Context\\PostgresContext.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T14:46:30.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\App.axaml.cs",
+              "RelativeDocumentMoniker": "Demo0704\\App.axaml.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\App.axaml.cs",
+              "RelativeToolTip": "Demo0704\\App.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T06:42:18.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\App.axaml",
+              "RelativeDocumentMoniker": "Demo0704\\App.axaml",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\App.axaml",
+              "RelativeToolTip": "Demo0704\\App.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-07T06:33:22.42Z",
+              "WhenOpened": "2026-04-09T10:44:37.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "Demo0704\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\class_student\\source\\repos\\Demo0704\\Demo0704\\MainWindow.axaml.cs",
-              "RelativeToolTip": "Demo0704\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwCIAAAARAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Maker.cs",
+              "DocumentMoniker": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Maker.cs",
+              "RelativeDocumentMoniker": "Demo0704\\Models\\Maker.cs",
+              "ToolTip": "C:\\Users\\Kabanidze\\source\\repos\\ForOtchet\\Demo0704\\Models\\Maker.cs",
+              "RelativeToolTip": "Demo0704\\Models\\Maker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T06:33:18.609Z"
+              "WhenOpened": "2026-04-09T12:26:05.453Z"
             }
           ]
         }

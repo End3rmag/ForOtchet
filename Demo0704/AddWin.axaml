@@ -2,14 +2,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="460" MaxWidth="610" MaxHeight="460"
         x:Class="Demo0704.AddWin"
+        WindowStartupLocation="CenterScreen"
         Title="AddWin"
         x:CompileBindings="False">
   <Border BorderThickness="1" Width="600" Height="450" BorderBrush="Black">
-      <Grid ColumnDefinitions="* *" ShowGridLines="True">
+      <Grid ColumnDefinitions="* *" >
           <StackPanel Grid.ColumnSpan="2">
-          <TextBlock Text="Окно добавления" HorizontalAlignment="Center" Margin="5" FontSize="24"/>
+          <TextBlock x:Name="Titles" HorizontalAlignment="Center" Margin="5" FontSize="24"/>
               </StackPanel>
 	  <StackPanel VerticalAlignment="Center">
           
@@ -20,57 +21,50 @@
           <StackPanel Spacing="5" Margin="5">
           <StackPanel Orientation="Horizontal" Spacing="5">
                   <TextBlock Text="Выбирете в чем измеряется:"/>
-                  <ComboBox x:Name="Izmer" SelectedValue="{Binding IdIzmerenieNavigation}">
-				      <ComboBox.ItemTemplate>
-						   <DataTemplate>
-							   <Grid Tag="{Binding Id}">
-						            <TextBlock Text="{Binding Name}"/>
-                                </Grid>	
-                           </DataTemplate>
-                       </ComboBox.ItemTemplate>    
+                  <ComboBox x:Name="Izmer">    
+              <ComboBox.ItemTemplate>
+                              <DataTemplate>
+                                  <TextBlock Text="{Binding Name}"/>
+                              </DataTemplate>
+                          </ComboBox.ItemTemplate>
                   </ComboBox>
               </StackPanel>
                   <StackPanel Orientation="Horizontal" Spacing="5">
                       <TextBlock Text="Выбирете поставщика:"/>
-                  <ComboBox x:Name="Postav">
-				       <ComboBox.ItemTemplate>
-						   <DataTemplate>
-							   <Grid Tag="{Binding Id}">
-						            <TextBlock Text="{Binding Name}"/>
-                                </Grid>	
-                           </DataTemplate>
-                       </ComboBox.ItemTemplate>    
+                  <ComboBox x:Name="Postav">	
+                      <ComboBox.ItemTemplate>
+                              <DataTemplate>
+                                  <TextBlock Text="{Binding Name}"/>
+                              </DataTemplate>
+                          </ComboBox.ItemTemplate>
                   </ComboBox>
                   </StackPanel>
               <StackPanel Orientation="Horizontal" Spacing="5">
                       <TextBlock Text="Выбирете производителя:"/>
                   <ComboBox x:Name="Maker">
-				       <ComboBox.ItemTemplate>
-						   <DataTemplate>
-							   <Grid Tag="{Binding Id}">
-						            <TextBlock Text="{Binding Name}"/>
-                                </Grid>	
-                           </DataTemplate>
-                       </ComboBox.ItemTemplate>  
+				        <ComboBox.ItemTemplate>
+                              <DataTemplate>
+                                  <TextBlock Text="{Binding Name}"/>
+                              </DataTemplate>
+                          </ComboBox.ItemTemplate>
                   </ComboBox>
                   </StackPanel>
               <StackPanel Orientation="Horizontal" Spacing="5">
                       <TextBlock Text="Выбирете категорию:"/>
-                  <ComboBox x:Name="Categ">
-				       <ComboBox.ItemTemplate>
-						   <DataTemplate>
-							   <Grid Tag="{Binding Id}">
-						            <TextBlock Text="{Binding Name}"/>
-                                </Grid>	
-                           </DataTemplate>
-                       </ComboBox.ItemTemplate>    
+                  <ComboBox x:Name="Categ">  
+                  <ComboBox.ItemTemplate>
+                              <DataTemplate>
+                                  <TextBlock Text="{Binding Name}"/>
+                              </DataTemplate>
+                          </ComboBox.ItemTemplate>
                   </ComboBox>
                   </StackPanel>
               </StackPanel>
           <StackPanel Spacing="5" Margin="5">
 			  <TextBox 
               Text="{Binding Discription}"
-              x:Name="Disp" Watermark="Описание" TextWrapping="WrapWithOverflow"/>
+              x:Name="Disp" Watermark="Описание" TextWrapping="Wrap"
+              AcceptsReturn="True" Height="60"/>
               <StackPanel Orientation="Horizontal" Spacing="5">
                   <NumericUpDown 
                   Minimum="0,00" ShowButtonSpinner="False"  
@@ -90,18 +84,21 @@
               Text="{Binding InSklad}"
               x:Name="HowMach" Watermark="кол-во на складе" Width="140"/>
           </StackPanel>
+               <Button x:Name="SelectImageButton" Content="Выбрать изображение" Margin="0 10" Width="180"/>
               </StackPanel>
       </StackPanel>
+
+          <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+              <Image x:Name="ProductImage" Source="{Binding Image}" Width="200" Height="200" Stretch="Uniform"/>
+              <TextBlock x:Name="ImagePathText" Text="{Binding Picture}" FontSize="10" TextWrapping="Wrap" Width="200" Margin="0 5"/>
+          </StackPanel>
+
           <Button 
           Name="SaveButton"
           Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 10"
                   Content="Сохранить"/>
 
-          <Image
-            Name="ProductImage"
-            Source="{Binding Image}"
-            Grid.Column="1"
-            HorizontalAlignment="Center"></Image>
+         
           </Grid>
   </Border>
 </Window>

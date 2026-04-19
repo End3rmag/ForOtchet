@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Demo0704.Context;
 
-public partial class DbUser10Context : DbContext
+public partial class PostgresContext : DbContext
 {
-    public DbUser10Context()
+    public PostgresContext()
     {
     }
 
-    public DbUser10Context(DbContextOptions<DbUser10Context> options)
+    public PostgresContext(DbContextOptions<PostgresContext> options)
         : base(options)
     {
     }
@@ -22,7 +22,7 @@ public partial class DbUser10Context : DbContext
 
     public virtual DbSet<Maker> Makers { get; set; }
 
-    public virtual DbSet<Pointisyee> Pointisyees { get; set; }
+    public virtual DbSet<Postavshik> Postavshiks { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
 
@@ -34,7 +34,7 @@ public partial class DbUser10Context : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=192.168.200.10;Database=db_user10;Username=user10;password=CLMYF39702paNpic;");
+        => optionsBuilder.UseNpgsql("Host=localhost:5432;Database=postgres;Username=postgres;password=123123");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -42,7 +42,7 @@ public partial class DbUser10Context : DbContext
         {
             entity.HasKey(e => e.Id).HasName("category_pk");
 
-            entity.ToTable("category", "Demo0704");
+            entity.ToTable("category", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
@@ -54,7 +54,7 @@ public partial class DbUser10Context : DbContext
         {
             entity.HasKey(e => e.Id).HasName("izmerenie_pk");
 
-            entity.ToTable("izmerenie", "Demo0704");
+            entity.ToTable("izmerenie", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
@@ -66,7 +66,7 @@ public partial class DbUser10Context : DbContext
         {
             entity.HasKey(e => e.Id).HasName("maker_pk");
 
-            entity.ToTable("maker", "Demo0704");
+            entity.ToTable("maker", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
@@ -74,11 +74,11 @@ public partial class DbUser10Context : DbContext
                 .HasColumnName("name");
         });
 
-        modelBuilder.Entity<Pointisyee>(entity =>
+        modelBuilder.Entity<Postavshik>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("pointisyee_pk");
+            entity.HasKey(e => e.Id).HasName("postavshik_pk");
 
-            entity.ToTable("pointisyee", "Demo0704");
+            entity.ToTable("postavshik", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
@@ -90,7 +90,7 @@ public partial class DbUser10Context : DbContext
         {
             entity.HasKey(e => e.Id).HasName("product_pk");
 
-            entity.ToTable("product", "Demo0704");
+            entity.ToTable("product", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Articul)
@@ -103,7 +103,7 @@ public partial class DbUser10Context : DbContext
             entity.Property(e => e.IdCategory).HasColumnName("id_category");
             entity.Property(e => e.IdIzmerenie).HasColumnName("id_izmerenie");
             entity.Property(e => e.IdMaker).HasColumnName("id_maker");
-            entity.Property(e => e.IdPointisyee).HasColumnName("id_pointisyee");
+            entity.Property(e => e.IdPostavshik).HasColumnName("id_postavshik");
             entity.Property(e => e.InSklad).HasColumnName("in_sklad");
             entity.Property(e => e.MaxDiscount).HasColumnName("max_discount");
             entity.Property(e => e.Name)
@@ -129,17 +129,17 @@ public partial class DbUser10Context : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("product_maker_fk");
 
-            entity.HasOne(d => d.IdPointisyeeNavigation).WithMany(p => p.Products)
-                .HasForeignKey(d => d.IdPointisyee)
+            entity.HasOne(d => d.IdPostavshikNavigation).WithMany(p => p.Products)
+                .HasForeignKey(d => d.IdPostavshik)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("product_pointisyee_fk");
+                .HasConstraintName("product_postavshik_fk");
         });
 
         modelBuilder.Entity<Role>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("role_pk");
 
-            entity.ToTable("role", "Demo0704");
+            entity.ToTable("role", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Name)
@@ -151,7 +151,7 @@ public partial class DbUser10Context : DbContext
         {
             entity.HasKey(e => e.Id).HasName("users_pk");
 
-            entity.ToTable("users", "Demo0704");
+            entity.ToTable("users", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Firstname)
@@ -178,7 +178,7 @@ public partial class DbUser10Context : DbContext
         {
             entity.HasKey(e => e.Id).HasName("user_product_pk");
 
-            entity.ToTable("user_product", "Demo0704");
+            entity.ToTable("user_product", "demo0704");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdProduct).HasColumnName("id_product");

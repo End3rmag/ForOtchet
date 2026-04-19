@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Demo0704.ProductWin"
+        WindowStartupLocation="CenterScreen"
         Title="Список продуктов"
         x:CompileBindings="False">
   <Grid ColumnDefinitions="* * * *" Background="Gray" RowDefinitions="* * * *">
@@ -11,7 +12,7 @@
     
       <TextBox x:Name="SearchBox" Width="200" Background="White"
                VerticalAlignment="Bottom" Grid.Column="1"
-               KeyUp="SearchBox_KeyUp" Watermark="Поиск"/>
+               KeyUp="SearchBox_KeyUp" Watermark="Поиск" HorizontalAlignment="Left"/>
 
           <Button Grid.Column="2" HorizontalAlignment="Right"
               VerticalAlignment="Bottom"
@@ -50,7 +51,7 @@
                >
           <ListBox.ItemTemplate>
 			  <DataTemplate>
-				            <Border Background="{Binding Borderbruh}" BorderBrush="Black" BorderThickness="1">
+				            <Border Background="{Binding Borderbruh}" BorderBrush="Black" Width="380" BorderThickness="1">
 		  <Grid ColumnDefinitions="100 *" ShowGridLines="True">
               
 			  <StackPanel  Margin="5">
@@ -66,8 +67,10 @@
 
                       <StackPanel Orientation="Horizontal">
                   <TextBlock Text="Описание: "/>
-				  <TextBlock Text="{Binding Discription}"/>
+                          <StackPanel Width="200" HorizontalAlignment="Left" Margin="-2 0 0 0">
+				  <TextBlock Text="{Binding Discription}" TextWrapping="Wrap"/>
               </StackPanel>
+                          </StackPanel>
 
                       <StackPanel Orientation="Horizontal">
                   <TextBlock Text="Производитель: "/>
@@ -77,12 +80,13 @@
                       <StackPanel Orientation="Horizontal">
                   <TextBlock Text="Цена: "/>
 				  <TextBlock Text="{Binding Price}"/>
-                  <TextBlock Text=" Руб."/>
+                  <TextBlock Text=" руб."/>
               </StackPanel>
 
                       <StackPanel Orientation="Horizontal">
                   <TextBlock Text="Скидка: "/>
 				  <TextBlock Text="{Binding DiscountNow}"/>
+                          <TextBlock Text="%"/>
               </StackPanel>
 
                       </StackPanel>
